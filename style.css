@@ -1,0 +1,116 @@
+*{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+.div1{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(255, 166, 0, 0.944);
+    text-align: center;
+     
+    align-items: center;
+}
+.div1left{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    
+    
+
+}
+.div1right{
+    
+    flex: 1;
+    height: 40px;
+    align-items: center;
+    
+}
+
+.div2{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color:  rgb(230, 204, 155);
+    text-align: center;
+     
+    align-items: center;
+}
+.div2left{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+}
+.div2right{
+    display: flex;
+    flex: 1;
+    height: 40px;
+    align-items: center;
+    
+}
+.div2child{
+    flex: 1;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+}
+
+
+.div3{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color:white;
+    text-align: center;
+     
+    align-items: center;
+
+}
+.div3left{
+    width: 200px;
+}
+.div3leftchild{
+    width: 200px;
+    height: 99px;
+    text-align: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.div3right{
+     display: flex;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    text-align: center;
+     
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.divlogin{
+    width:auto;
+    height: auto;
+    text-align: center;
+}
+
+button{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(255, 166, 0);
+    border-radius: 5px;
+}
+
+a{
+    text-decoration: none;
+    border: none;
+}
