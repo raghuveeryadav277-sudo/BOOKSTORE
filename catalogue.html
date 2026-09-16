@@ -1,11 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Catalogue - Online Book Store</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <div class="logo">
+                Logo
+            </div>
+
+            <div class="website-name">
+                Web Site Name
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <div class="navigation">
+
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart</a>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- LEFT MENU -->
+            <div class="left-menu">
+
+                <a href="catalogue.html?category=CSE">CSE</a>
+                <a href="catalogue.html?category=ECE">ECE</a>
+                <a href="catalogue.html?category=EEE">EEE</a>
+                <a href="catalogue.html?category=CIVIL">CIVIL</a>
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+            <div class="right-content catalogue-content">
+
+                <div class="catalogue-box">
+
+                    <h3>Catalogue Page</h3>
+
+                    <table class="book-table">
+
+                        <tr>
+                            <th>Cover Page</th>
+                            <th>Book</th>
+                            <th>Author</th>
+                            <th>Publication</th>
+                            <th>Price</th>
+                            <th>Cart</th>
+                        </tr>
+
+
+                        <!-- BOOK 1 -->
+                        <tr>
+
+                            <td>
+                                <div class="book-cover">
+                                    XML<br>Bible
+                                </div>
+                            </td>
+
+                            <td>XML Bible</td>
+
+                            <td>Winston</td>
+
+                            <td>Wiley</td>
+
+                            <td>$40.5</td>
+
+                            <td>
+                                <button onclick="addToCart('XML Bible', 'Winston', 40.5)">
+                                    Add to Cart
+                                </button>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- BOOK 2 -->
+                        <tr>
+
+                            <td>
+                                <div class="book-cover">
+                                    AI
+                                </div>
+                            </td>
+
+                            <td>AI</td>
+
+                            <td>S. Russel</td>
+
+                            <td>Princeton Hall</td>
+
+                            <td>$63</td>
+
+                            <td>
+                                <button onclick="addToCart('AI', 'S. Russel', 63)">
+                                    Add to Cart
+                                </button>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- BOOK 3 -->
+                        <tr>
+
+                            <td>
+                                <div class="book-cover">
+                                    Java<br>2
+                                </div>
+                            </td>
+
+                            <td>Java 2</td>
+
+                            <td>Watson</td>
+
+                            <td>BPB Publications</td>
+
+                            <td>$35.5</td>
+
+                            <td>
+                                <button onclick="addToCart('Java 2', 'Watson', 35.5)">
+                                    Add to Cart
+                                </button>
+                            </td>
+
+                        </tr>
+
+
+                        <!-- BOOK 4 -->
+                        <tr>
+
+                            <td>
+                                <div class="book-cover">
+                                    HTML
+                                </div>
+                            </td>
+
+                            <td>HTML in 24 Hours</td>
+
+                            <td>Sam Peter</td>
+
+                            <td>Sam Publication</td>
+
+                            <td>$50</td>
+
+                            <td>
+                                <button onclick="addToCart('HTML in 24 Hours', 'Sam Peter', 50)">
+                                    Add to Cart
+                                </button>
+                            </td>
+
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function addToCart(bookName, author, price) {
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            cart.push({
+                name: bookName,
+                author: author,
+                price: price
+            });
+
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert(bookName + " has been added to cart!");
+
+        }
+
+    </script>
+
 </body>
 </html>

@@ -1,28 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - Online Book Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="divlogin">
-        <form action="">
-            Login Page
-            <br>
-            <br>
-            User Name : <input type="text">
-            <br>
-            <br>
-            Password : <input type="password">
-            <br>
-            <br>
-            
-                <button>Submit</button>      <button>reset</button>          
-            <br>
-            <br>
-        </form>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <div class="logo">
+                Logo
+            </div>
+
+            <div class="website-name">
+                Web Site Name
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <div class="navigation">
+
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart</a>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- LEFT MENU -->
+            <div class="left-menu">
+
+                <a href="catalogue.html?category=CSE">CSE</a>
+
+                <a href="catalogue.html?category=ECE">ECE</a>
+
+                <a href="catalogue.html?category=EEE">EEE</a>
+
+                <a href="catalogue.html?category=CIVIL">CIVIL</a>
+
+            </div>
+
+
+            <!-- LOGIN AREA -->
+            <div class="right-content">
+
+                <div class="login-box">
+
+                    <h3>Login Page</h3>
+
+                    <form>
+
+                        <div class="form-row">
+                            <label>User Name:</label>
+                            <input type="text" name="username">
+                        </div>
+
+                        <div class="form-row">
+                            <label>Password:</label>
+                            <input type="password" name="password">
+                        </div>
+
+                        <div class="buttons">
+
+                            <input type="submit" value="Submit">
+
+                            <input type="reset" value="Reset">
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
+
 </body>
 </html>

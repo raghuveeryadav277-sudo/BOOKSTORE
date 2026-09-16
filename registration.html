@@ -1,11 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration - Online Book Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <div class="logo">
+                Logo
+            </div>
+
+            <div class="website-name">
+                Web Site Name
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+        <div class="navigation">
+
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="catalogue.html">Catalogue</a>
+            <a href="cart.html">Cart</a>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <!-- LEFT MENU -->
+            <div class="left-menu">
+
+                <a href="catalogue.html?category=CSE">CSE</a>
+                <a href="catalogue.html?category=ECE">ECE</a>
+                <a href="catalogue.html?category=EEE">EEE</a>
+                <a href="catalogue.html?category=CIVIL">CIVIL</a>
+
+            </div>
+
+
+            <!-- REGISTRATION -->
+            <div class="right-content">
+
+                <div class="registration-box">
+
+                    <h3>Registration Page</h3>
+
+                    <form id="registrationForm">
+
+                        <!-- NAME -->
+                        <div class="registration-row">
+                            <label>Name:</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="registration-row">
+                            <label>Password:</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="registration-row">
+                            <label>E-mail ID:</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+
+
+                        <!-- PHONE -->
+                        <div class="registration-row">
+                            <label>Phone Number:</label>
+                            <input type="text" id="phone" name="phone">
+                        </div>
+
+
+                        <!-- SEX -->
+                        <div class="registration-row">
+                            <label>Sex:</label>
+
+                            <input type="radio"
+                                   name="sex"
+                                   value="Male">
+                            Male
+
+                            <input type="radio"
+                                   name="sex"
+                                   value="Female">
+                            Female
+                        </div>
+
+
+                        <!-- DATE OF BIRTH -->
+                        <div class="registration-row">
+                            <label>Date of Birth:</label>
+
+                            <select id="day">
+                                <option>Day</option>
+
+                                <script>
+                                    for (let i = 1; i <= 31; i++) {
+                                        document.write(
+                                            "<option>" + i + "</option>"
+                                        );
+                                    }
+                                </script>
+
+                            </select>
+
+
+                            <select id="month">
+
+                                <option>Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+
+                            </select>
+
+
+                            <select id="year">
+
+                                <option>Year</option>
+
+                                <script>
+                                    for (let i = 2026; i >= 1950; i--) {
+                                        document.write(
+                                            "<option>" + i + "</option>"
+                                        );
+                                    }
+                                </script>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- LANGUAGES -->
+                        <div class="registration-row">
+
+                            <label>Languages Known:</label>
+
+                            <input type="checkbox"
+                                   name="language"
+                                   value="English">
+                            English
+
+                            <input type="checkbox"
+                                   name="language"
+                                   value="Telugu">
+                            Telugu
+
+                            <input type="checkbox"
+                                   name="language"
+                                   value="Hindi">
+                            Hindi
+
+                            <input type="checkbox"
+                                   name="language"
+                                   value="Tamil">
+                            Tamil
+
+                        </div>
+
+
+                        <!-- ADDRESS -->
+                        <div class="registration-row address-row">
+
+                            <label>Address:</label>
+
+                            <textarea id="address"
+                                      name="address"
+                                      rows="4"
+                                      cols="35"></textarea>
+
+                        </div>
+
+
+                        <!-- BUTTONS -->
+                        <div class="registration-buttons">
+
+                            <input type="submit"
+                                   value="Submit">
+
+                            <input type="reset"
+                                   value="Reset">
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
